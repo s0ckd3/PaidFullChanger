@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="app-title">PaidFullChanger </title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="page" class="page-backup">
+        <div id="app">
+            <header id="header">
+                <div class="d-flex justify-content-between">
+                    <h1 class="tool-name">MMO Tool <span class="tool-version">v1.0.2</span></h1>
+                    <ul class="action">
+                        <li class="action-icon icon-minimum"><a href="#"><span class="mdi mdi-minus"></span></a></li>
+                        <li class="action-icon icon-maximum"><a href="#"><span class="mdi mdi-fullscreen"></span></a>
+                        </li>
+                        <li class="action-icon icon-close"><a href="#"><span class="mdi mdi-close"></span></a></li>
+                    </ul>
+                </div>
+            </header><!-- #header -->
+            <main id="main">
+                <nav id="menu" class="navbar-primary shadow-lg">
+                </nav>
+                <div class="main-content">
+                    <div class="app-content">
+                        <div class="container py-2">
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <h4>BẢNG GIÁ</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-primary">Mỗi SERIAL tương đương một thiết bị android của bạn. Mỗi
+                                        thiết bị
+                                        android sẽ có 1 mã
+                                        SERIAL khác nhau</h6>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Gói</th>
+                                                <th>Giá 1 key</th>
+                                                <th>Số lượng Thiết bị</th>
+                                                <th>Thời gian</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="fw-bold text-secondary">
+                                                    <span class="mdi mdi-cash-multiple pr-2"></span>Standard
+                                                </td>
+                                                <td>400.000 VND</td>
+                                                <td>
+                                                    < 20 key</td>
+                                                <td>1 tháng</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold text-primary">
+                                                    <span class="mdi mdi-cash-multiple pr-2"></span>Premium
+                                                </td>
+                                                <td>300.000 VND</td>
+                                                <td> > 20 Key</td>
+                                                <td> 1 tháng</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold text-warning"><span
+                                                        class="mdi mdi-cash-multiple pr-2"></span>Luxury</td>
+                                                <td>200.000 x 12 = 2.400.000 VND</td>
+                                                <td>1 Key</td>
+                                                <td>1 năm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr class="dropdown-divider">
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <h4>Thông tin thanh toán</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <span class="mdi mdi-phone text-primary pr-2"></span>
+                                            <span href="#">Hotline: <span class="text-primary">0386505555</span></span>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action">
+                                            <span class="mdi mdi-facebook text-primary pr-2"></span>
+                                            <a target="_blank"
+                                                href="https://www.facebook.com/profile.php?id=100072423700951"
+                                                class="text-decoration-none">Đào Vịnh</a> -
+                                            <a target="_blank"
+                                                href="https://www.facebook.com/profile.php?id=100072423700951"
+                                                class="text-decoration-none">https://www.facebook.com/profile.php?id=100072423700951</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="mdi mdi-bank text-primary pr-2"></span>
+                                            <span>Vp bank: 822226969888 - Pham Trung Nhat</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .content -->
+            </main><!-- #main -->
+        </div><!-- #app -->
+    </div><!-- #main -->
+    <!-- Common Modal -->
+    <script>
+        var $$ = require("jquery")
+    </script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+    <script src="assets/js/load_common_page.js"></script>
+    <script src="assets/js/load_payment.js"></script>
+    <script>
+        $$("#payment_menu").addClass("active");
+    </script>
+</body>
+
+</html>

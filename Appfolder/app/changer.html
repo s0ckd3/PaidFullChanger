@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="app-title">Paid Full Change - 0386505555</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="assets/css/common.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body style="overflow: hidden;">
+  <div id="page">
+    <div id="app">
+      <header id="header">
+        <div class="d-flex justify-content-between">
+          <h1 class="tool-name">
+            Paid Full Change<span class="version-app">v2.0.2</span>
+          </h1>
+          <ul class="action">
+            <li class="action-icon icon-minimum">
+              <a href="#"><span class="mdi mdi-minus"></span></a>
+            </li>
+            <li class="action-icon icon-maximum">
+              <a href="#"><span class="mdi mdi-fullscreen"></span></a>
+            </li>
+            <li class="action-icon icon-close">
+              <a href="#"><span class="mdi mdi-close"></span></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- #header -->
+      <main id="main">
+        <nav id="menu" class="navbar-primary shadow-lg"></nav>
+        <div class="main-content" style="margin-right:250px;">
+          <div class="app-content" style="height: 350px; overflow: auto; resize: vertical;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <input type="checkbox" id="selectAll" style="margin-top: 10px;" />
+                  </th>
+                  <th scope="col"></th>
+                  <th scope="col">Device Name</th>
+                  <th scope="col">Serial</th>
+                  <th scope="col">Process</th>
+                  <!-- <th scope="col actions">Actions</th> -->
+                </tr>
+              </thead>
+              <tbody id="device-list"></tbody>
+            </table>
+          </div>
+          <!-- .app-content -->
+          <div class="app-actions">
+            <div class="app-inputs">
+              <div class="input-left">
+                <div class="input-group">
+                  <label for="form-control">Manufacture</label>
+                  <select class="form-control device-select-input input-form-data" id="man-action">
+                  </select>
+                </div>
+
+
+                <div class="input-group">
+                  <label for="form-control">SDK</label>
+                  <select class="form-control device-select-input input-form-data" id="sdk">
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="form-control">Country</label>
+                  <select class="form-control device-select-input input-form-data" id="country-action">
+                    <!-- <option></option> -->
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="form-control">O Name</label>
+                  <select class="form-control device-select-input input-form-data" id="operator-name-action">
+                    <!-- <option></option> -->
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="form-control">Carrier Code</label>
+                  <input id="SimOperator" type="text" aria-label="CarrierCode" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+
+              </div>
+              <!-- .input-left -->
+              <div class="input-right">
+                <div class="input-group">
+                  <label for="form-control">Device</label>
+                  <input id="model" type="text" aria-label="Device" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+
+                <div class="input-group">
+                  <label for="form-control">Wifi Mac</label>
+                  <input id="wifiMac" type="text" aria-label="wifiMac" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+                <div class="input-group">
+                  <label for="form-control">Wifi Name</label>
+                  <input id="wifiName" type="text" aria-label="wifiName" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+                <div class="input-group">
+                  <label for="form-control">BSSID</label>
+                  <input id="BSSID" type="text" aria-label="BSSID" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+                <div class="input-group">
+                  <label for="form-control">GL Vendor</label>
+                  <input id="GLVendor" type="text" aria-label="GLVendor" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+              </div>
+              <!-- .input-right -->
+            </div>
+            <!-- .app-inputs-->
+            <div class="app-inputs">
+              <div class="input-left">
+
+                <div class="input-group">
+                  <label for="form-control">Android Seri</label>
+                  <input id="AndroidSeri" type="text" aria-label="AndroidSeri" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+                <div class="input-group">
+                  <label for="form-control">Android Id</label>
+                  <input id="androidID" type="text" aria-label="Note" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+                <div class="input-group">
+                  <label for="form-control">DateUTC</label>
+                  <input id="DateUTC" type="text" aria-label="DateUTC" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+                <div class="input-group">
+                  <label for="form-control">BuildDate</label>
+                  <input id="BuildDate" type="text" aria-label="GLRenderer" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+
+                <div class="input-group">
+                  <label for="form-control">GL Renderer</label>
+                  <input id="GLRenderer" type="text" aria-label="GLRenderer" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+              </div>
+              <!-- .input-left -->
+
+              <div class="input-right">
+                <div class="input-group">
+                  <label for="form-control">IMEI</label>
+                  <input id="IMEI" type="text" aria-label="SIM Serial" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+                <div class="input-group">
+                  <label for="form-control">SIM Serial</label>
+                  <input id="SimSerial" type="text" aria-label="SIM Serial" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+                <div class="input-group">
+                  <label for="form-control">IMSI</label>
+                  <input id="SubscriberId" type="text" aria-label="SIM IMSI" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+                <div class="input-group">
+                  <label for="form-control">Phone</label>
+                  <input id="PhoneNumber" type="text" aria-label="SIM Serial" class="form-control input-form-data"
+                    placeholder="" />
+                </div>
+
+              </div>
+              <!-- .input-right -->
+            </div>
+            <!-- .app-inputs-->
+            <!-- .app-buttons -->
+          </div>
+          <!-- .app-actions -->
+        </div>
+        <!-- .content -->
+      </main>
+      <div id="right-content" class="container">
+        <fieldset class="p-1">
+
+          <legend class="w-auto">Auto</legend>
+          <div class="w-100">
+            <button id="reg-mail-btn" class="btn btn-sm btn-leaf text-sm multi mx-1" style="width: 45%">
+              Reg Mail
+            </button>
+            <button id="stop-all-reg-mail-btn" class="btn btn-sm btn-leaf text-sm multi mx-1" style="width: 45%">
+              Stop Reg Mail
+            </button>
+          </div>
+        </fieldset>
+        <fieldset class="p-1">
+
+          <legend class="w-auto">Change Information</legend>
+          <div class="w-100">
+            <button id="random-info-btn" class="btn btn-sm btn-leaf text-sm multi mx-1" style="width: 45%">
+              Change
+            </button>
+            <button id="save-info-btn" class="btn btn-sm btn-leaf text-sm multi mx-1" style="width: 45%">
+              Save
+            </button>
+          </div>
+          <div class="w-100">
+            <button id="random-sim-info-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 multi" style="width: 45%">
+              Change SIM
+            </button>
+            <button id="save-sim-info-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 multi" style="width: 45%">
+              Save SIM
+            </button>
+          </div>
+        </fieldset>
+        <fieldset class="p-1">
+          <legend class="w-auto">Clean data</legend>
+          <div class="w-100">
+            <button id="wipe-btn" class="btn btn-sm btn-leaf text-sm mx-1 single" style="width: 45%">
+              All
+            </button>
+            <button id="wipe-mail-btn" class="btn btn-sm btn-leaf text-sm mx-1 single" style="width: 45%">
+              Mail
+            </button>
+          </div>
+          <div class="w-100">
+            <button id="reset-info-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+              Reset
+            </button>
+            <button id="reset-factory-info-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+              Factory
+            </button>
+          </div>
+        </fieldset>
+        <fieldset class="p-1">
+          <legend class="w-auto">Backup data</legend>
+          <div class="w-100">
+            <button id="backup-btn" class="btn btn-sm btn-leaf text-sm mx-1 single" style="width: 45%">
+              Mail
+            </button>
+            <button id="backup-change-btn" class="btn btn-sm btn-leaf text-sm mx-1 single" disabled style="width: 45%">
+              Mail & Change
+            </button>
+          </div>
+          <input type="text" id="backup-quick-search" placeholder="Quick search mail backup"
+            class="text-sm input-sm w-100 p-2" />
+          <select class="text-sm input-md w-100 device-select-input btn-sm btn-leafall" id="backup-list"></select>
+          <div class="w-100">
+            <button id="restore-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+              Restore Mail
+            </button>
+            <button id="backup-restore-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+              B&S Mail
+            </button>
+          </div>
+        </fieldset>
+        <fieldset class="p-1">
+          <legend class="w-auto">Restore data</legend>
+          <div class="w-100">
+            <button id="show-backup-app-modal-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 single"
+              style="width: 45%">
+              App
+            </button>
+            <button id="show-backup-change-app-modal-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 single"
+              style="width: 45%">
+              App & Change
+            </button>
+          </div>
+          <input type="text" id="backup-app-quick-search" placeholder="Quick search app backup"
+            class="text-sm input-sm w-100 p-2" />
+          <select class="text-sm input-md w-100 device-select-input btn-sm btn-leafall" id="backup-app-list">
+          </select>
+          <div class="w-100">
+            <button id="restore-app-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 single " style="width: 45%">
+              Restore APP
+            </button>
+            <button id="show-backup-restore-app-modal-btn" class="btn btn-sm btn-leaf text-sm mx-1 mt-1 single"
+              style="width: 45%">
+              B&S APP
+            </button>
+          </div>
+        </fieldset>
+        <fieldset class="p-1">
+          <legend class="w-auto">Utility</legend>
+          <button class="screen-capt-btn btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+            Capture
+          </button>
+          <button class="change-name-btn btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+            Change name
+          </button>
+          <button class="send-text-btn btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+            Input text
+          </button>
+          <button class="install-apk-btn btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+            Install Apk
+          </button>
+          <button class="reboot-btn btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+            Reboot
+          </button>
+          <button class="open-link-action btn btn-sm btn-leaf text-sm mx-1 mt-1 single" style="width: 45%">
+            IP
+          </button>
+          <button class="btn-view-multi btn btn-sm btn-leaf text-sm mx-1 mt-1 multi" style="width: 45%">
+            View All
+          </button>
+        </fieldset>
+        <div class="btn-group hidden">
+          <button id="run-auto-btn" class="btn-small single">
+            Run Auto
+          </button>
+          <button id="stop-auto-btn" class="btn-small">
+            Stop Auto
+          </button>
+        </div>
+        <div class="btn-group hidden">
+          <button id="random-info-all-btn" class="btn-small btn-disable multi">
+            Random All
+          </button>
+          <button id="save-info-all-btn" class="btn-small btn-disable multi">
+            Save Info All
+          </button>
+        </div>
+        <div class="btn-group hidden">
+          <button id="random-sim-info-all-btn" class="btn-small btn-disable multi">
+            Random SIM All
+          </button>
+          <button id="save-sim-info-all-btn" class="btn-small btn-disable multi">
+            Save SIM Info All
+          </button>
+        </div>
+        <div class="btn-group">
+        </div>
+        <div class="btn-group">
+
+        </div>
+        <div class="btn-group">
+
+
+        </div>
+      </div>
+      <!-- #main -->
+    </div>
+    <!-- #app -->
+  </div>
+  <!-- #main -->
+
+  <!-- Common Modal -->
+  <div id="common-modal"></div>
+  <!-- End Common Modal -->
+
+  <script>
+    let $$ = require("jquery");
+  </script>
+  <script>
+    require("popper.js");
+  </script>
+  <script>
+    require("bootstrap");
+  </script>
+  <script src="assets/js/load_common_page.js"></script>
+  <script src="assets/js/load_main.js"></script>
+</body>
+
+</html>

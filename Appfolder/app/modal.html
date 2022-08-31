@@ -1,0 +1,579 @@
+<!-- License Modal -->
+<div class="modal fade" id="licenseModal" tabindex="-1" role="dialog" aria-labelledby="licenseModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="tool-name">License Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="assets/icons/logo-horizotal.png" style="width: 150px; margin-bottom: 10px;" />
+        <span class="tool-name">Powered by PaidFull Team &nbsp;|<a id="logout" href="#"
+            class="text-danger">Logout</a></span>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<!-- License Modal -->
+<div class="modal fade" id="packagesToWipeModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 360px;">
+      <div class="modal-header">
+        <h5 class="tool-name">Add Package to Wipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <textarea rows="10" id="package-wipe-input" class="form-control"></textarea>
+        <br />
+        <button id="save-add-pacakge-btn" type="button" class="btn btn-primary">
+          Save
+        </button>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<!-- License Modal -->
+<div class="modal fade" id="choose-dir-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 360px;">
+      <div class="modal-header">
+        <h5 class="tool-name">Choose Folder To Backup</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <input id="choose-dir-input" type="text" class="form-control" style="display: unset; width: 50%;"
+          list="choose-dir-select" />
+        <datalist id="choose-dir-select">
+          <option value="Boston"> </option>
+        </datalist>
+
+        <button id="choose-dir-btn" type="button" class="btn btn-primary">
+          Backup
+        </button>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<!-- License Modal -->
+<div class="modal fade" id="change-name-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 360px;">
+      <div class="modal-header">
+        <h5 class="tool-name">Change device name</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <input id="change-name-input" type="text" class="form-control" style="display: unset; width: 50%;" />
+        <button id="change-name-action" type="button" class="btn btn-primary">
+          Change
+        </button>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<!-- License Modal -->
+<div class="modal fade" id="send-text-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 360px;">
+      <div class="modal-header">
+        <h5 class="tool-name">Send Text</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <input id="send-text-input" type="text" class="form-control" style="display: unset; width: 70%;" />
+        <button id="send-text-action" type="button" class="btn btn-primary">
+          Send
+        </button>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<!-- License Modal -->
+<div class="modal fade" id="screen-capt-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 360px;">
+      <div class="modal-header">
+        <h5 class="tool-name">Screen Capture</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <input id="screen-capt-input" type="text" class="form-control" style="display: unset; width: 70%;" />
+        <button id="screen-capt-action" type="button" class="btn btn-primary">
+          Capture
+        </button>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<!-- License Modal -->
+<div class="modal fade" id="reboot-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 360px;">
+      <div class="modal-header">
+        <h5 class="tool-name">Reboot options</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <button type="button" reboot-type="" class="reboot-option-btn btn">
+          Reboot Device
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <button type="button" reboot-type="recovery" class="reboot-option-btn btn">
+          Reboot Recovery
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <button type="button" reboot-type="bootloader" class="reboot-option-btn btn">
+          Reboot Bootloader
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <button type="button" reboot-type="reinstall-a1" class="reboot-option-btn btn">
+          Re-install A1 ROM
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <button type="button" reboot-type="fix-pad" class="reboot-option-btn btn "
+          style="width: 90px; margin-right: 10px; font-size: 10px;">Fix_PAD&GFO</button>
+        <button type="button" reboot-type="fix-debug" class="reboot-option-btn btn "
+          style="width: 90px; margin-left: 10px; font-size: 10px;">Fix_Debug(S7)</button>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<!-- License Modal -->
+<div class="modal fade" id="open-link-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 400px;">
+      <div class="modal-header">
+        <h5 class="tool-name">Open Link</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <button type="button" data="ip" class="open-link-btn btn btn-primary" style="margin-right: 10px;">
+          Check Ip
+        </button>
+        <button type="button" data="ip-api" class="open-link-btn btn btn-primary" style="margin-right: 10px;">
+          Check Ip API
+        </button>
+        <button type="button" data="chplay" class="open-link-btn btn btn-primary" style="margin-left: 10px;">
+          CH Play App
+        </button>
+      </div>
+      <div class="row modal-body text-center">
+        <div class="col-md-9">
+          <input id="custom-link-input" type="text" class="form-control" list="choose-links" />
+          <datalist id="choose-links"> </datalist>
+        </div>
+        <div class="col-md-3">
+          <button type="button" data="custom" class="open-link-btn btn btn-primary">
+            Chrome
+          </button>
+        </div>
+      </div>
+      <div class="row modal-body text-center">
+        <div class="col-md-9">
+          <input id="custom-wipe-input" type="text" class="form-control" list="choose-packages" />
+          <datalist id="choose-packages"> </datalist>
+        </div>
+        <div class="col-md-3">
+          <button type="button" data="wipe" class="open-link-btn btn btn-danger">
+            Wipe
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<!-- License Modal -->
+<div class="modal fade" id="auto-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 410px;">
+      <div class="modal-header">
+        <h5 class="tool-name">Auto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body hidden">
+        <span style="text-align: left; display: unset; width: 50%;">Proxy Sock</span>
+        <input id="proxy-input" type="text" class="form-control"
+          style="left: 50px; text-align: left; display: unset; width: 70%;" />
+      </div>
+
+      <div class="modal-body">
+        <span style="text-align: left; display: unset; width: 50%;">Ebook Link</span>
+        <input id="app-link-input" type="text" class="form-control"
+          style="left: 50px; text-align: left; display: unset; width: 70%;" />
+      </div>
+
+      <div class="modal-body">
+        <span style="text-align: left; display: unset; width: 50%;">Google Acc</span>
+        <input id="gmail-data-input" type="text" class="form-control" placeholder="mail|password|recovery"
+          style="left: 50px; text-align: left; display: unset; width: 70%;" />
+      </div>
+
+      <div class="modal-body text-center">
+        <button id="login-mail-action" type="button" class="btn btn-primary">Đăng Nhập</button>
+        <button id="add-pttt-only" type="button" class="btn btn-primary vip-only hidden">Thêm PTTT</button>
+        <button id="buy-ebook-only" type="button" class="btn btn-primary vip-only hidden">Mua Sách</button>
+      </div>
+
+      <div class="modal-body text-center vip-only hidden">
+        <button id="login-mail-action-add-pttt-only" type="button" class="btn btn-primary">Đăng Nhập + Thêm
+          PTTT</button>
+        <button id="add-payment-methods-action" type="button" class="btn btn-primary">Thêm PTTT + Mua Sách</button>
+      </div>
+
+      <div class="modal-body text-center vip-only hidden">
+        <button id="login-add-payment-action" type="button" class="btn btn-primary">Đăng Nhập + Thêm PTTT + Mua
+          Sách</button>
+      </div>
+
+      <div class="modal-body text-center vip-only hidden">
+        <button id="login-addpayment-unssbigo" type="button" class="btn btn-primary">Đăng Nhập + Thêm PTTT +
+          Unsuccessful Bigo</button>
+      </div>
+
+      <div class="modal-body text-center vip-only hidden">
+        <button id="login-addpayment-buyebook-unssbigo" type="button" class="btn btn-primary">Đăng Nhập + Thêm PTTT +
+          Mua
+          Sách + Unsuccessful Bigo</button>
+      </div>
+
+      <div class="modal-body text-center vip-only hidden">
+        <button id="unss-bigo" type="button" class="btn btn-primary">
+          Unsuccessful Bigo
+        </button>
+      </div>
+
+      <div class="modal-body text-center hidden">
+        <button id="unss-roblox" type="button" class="btn btn-primary">
+          Unsuccessful Roblox
+        </button>
+      </div>
+
+      <div class="modal-body text-center hidden">
+        <button id="send-request-refunds" type="button" class="btn btn-primary">
+          Send Request Refunds
+        </button>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<!-- License Modal -->
+<div class="modal fade" id="settings-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 360px;">
+      <div class="modal-header">
+        <h5 class="tool-name">Configuration</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="random-carrier" />
+            <label class="form-check-label" for="random-carrier">
+              Random CarrierCode
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="random-phone" />
+            <label class="form-check-label" for="random-phone">
+              Random Phone
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="move-to-restore" />
+            <label class="form-check-label" for="move-to-restore">
+              Move After Restore
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check-ip-vysor" />
+            <label class="form-check-label" for="check-ip-vysor">
+              Check Ip When Open Vysor
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="fix-pad-fgo">
+            <label class="form-check-label" for="fix-pad-fgo">
+              Fix PAD-FGO
+            </label>
+          </div>
+          <div class="form-group row" style="border: dotted 1px; padding: 5px; margin: 0px; margin-top: 10px; ">
+            <div class="col-md-12">
+              <span style="color: black">Chọn Thư mục Lưu Trữ</span>
+            </div>
+            <div class="col-md-12">
+              <div class="row" style="padding: 10px">
+                <input id="choose-folder-input" class="form-control col-md-8" type="text" style="margin-right: 15px;" />
+                <button id="choose-folder-btn">Duyệt</button>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row" style="border: dotted 1px; padding: 5px; margin: 0px; margin-top: 10px;">
+            <div class="col-md-12">
+              <span style="color: black">Cài Đặt Backup App</span>
+            </div>
+            <div class="col-md-12">
+              <div class="row" style="padding: 10px">
+                <select id="apps-list-conf" class="form-control" style="display: unset; font-size: 13px;"></select>
+              </div>
+            </div>
+            <div class="form-check" style="margin-left: 10px;">
+              <input class="form-check-input" type="checkbox" id="clear-app-after-change">
+              <label class="form-check-label" for="clear-app-after-change">
+                Xóa App Data sau khi Change
+              </label>
+            </div>
+          </div>
+        </div>
+        <button id="save-settings-action" type="button" class="btn btn-primary">
+          Save
+        </button>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<div class="modal fade" id="keys-modal" tabindex="-1" role="dialog" style="z-index: 1042;">
+  <div class="modal-dialog" style="max-width: 800px;">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">User keys</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body app-content" id="keys-modal-content">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Serial</th>
+              <th scope="col">Expired</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody id="key-list"></tbody>
+        </table>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="check-mail-modal" tabindex="-1" role="dialog" style="z-index: 1042;">
+  <div class="modal-dialog" style="max-width: 600px;">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Check Mail Not Exist File</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body app-content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-center">INPUT</div>
+            <textarea id="mail-input" class="form-control mb-4" rows="15"></textarea>
+          </div>
+          <div class="col-md-6">
+            <div class="text-center">OUTPUT</div>
+            <textarea id="mail-output" class="form-control mb-4" rows="15"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="text-center py-2">
+        <button id="check-mail-action" type="button" class="btn btn-primary">
+          CHECK
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Backup app Modal -->
+<div class="modal fade" id="backup-app-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 360px;">
+      <div class="modal-header">
+        <h5 id="backup-app-title-modal">App To Backup</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <input id="backup-app-name" type="text" placeholder="Tên file backup..." class="form-control"
+          style="width: 83%; display: unset; font-size: 14px;" />
+      </div>
+      <div class="modal-body text-center">
+        <select id="apps-list" class="form-control" style="width: 60%; display: unset; font-size: 14px;"
+          disabled></select>
+        <button id="backup-app-btn" type="button" class="btn btn-primary">
+          Backup
+        </button>
+      </div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+
+<div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="licenseModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="lds-hourglass"></div>
+    </div>
+    <!-- .modal-content -->
+  </div>
+  <!-- .modal-dialog -->
+</div>
+<!-- .modal -->
+<div id="loading" class="d-flex justify-content-center h-100 hidden">
+  <img id="loading-image" src="assets/images/gear.gif" />
+</div>
+
+
+
+<div class="modal fade" id="configuration-auto-modal" tabindex="-1" role="dialog" style="z-index: 1042;">
+  <div class="modal-dialog" style="max-width: 600px;">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Configuration Auto</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="mdi mdi-close"></span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body app-content">
+        <form class="row g-3" id="form-configuration-auto">
+          <div class="container-fluid">
+            <label>Name of Mail:</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" value="english" name="nameType" id="english">
+              <label class="form-check-label" for="english">
+                English
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" value="vietnammese" name="nameType" id="vietnammese" checked>
+              <label class="form-check-label" for="vietnammese">
+                Tiếng Việt
+              </label>
+            </div>
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-6 col-form-label">Mail Delay(Second):</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="mailDelaySecond" value="3">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-6 col-form-label">Mail Input Delay(Second):</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="mailInputDelaySecond" value="1">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-6 col-form-label">Password</label>
+              <div class="col-sm-6">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="randomPassword" name="passwordType"
+                    id="randomPassword">
+                  <label class="form-check-label" for="randomPassword">
+                    Random
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="fixedPassword" name="passwordType"
+                    id="fixedPassword" checked>
+                  <label class="form-check-label" for="fixedPassword">
+                    Fix:
+                  </label>
+                  <input type="text" class="form-control" id="fixedTextPassword" value="PaidFull2022">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="text-center py-2">
+        <button id="save-configuration-auto" type="button" class="btn btn-primary" data-dismiss="modal">
+          save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
